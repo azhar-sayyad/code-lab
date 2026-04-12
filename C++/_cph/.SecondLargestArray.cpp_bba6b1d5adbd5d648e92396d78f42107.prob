@@ -1,0 +1,1 @@
+{"name":"Local: SecondLargestArray","url":"h:\\Programs\\C++\\SecondLargestArray.cpp","tests":[{"id":1641494122779,"input":"4\n-1 -2 -3 -4","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\SecondLargestArray.cpp","group":"local","local":true}

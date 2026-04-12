@@ -1,0 +1,1 @@
+{"name":"Local: largestRectangleInHistogram","url":"h:\\Programs\\C++\\07 Stack\\largestRectangleInHistogram.cpp","tests":[{"id":1664281410854,"input":"6\n2 1 5 6 2 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\07 Stack\\largestRectangleInHistogram.cpp","group":"local","local":true}

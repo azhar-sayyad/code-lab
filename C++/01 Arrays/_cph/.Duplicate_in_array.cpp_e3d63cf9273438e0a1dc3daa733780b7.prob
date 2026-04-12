@@ -1,0 +1,1 @@
+{"name":"Local: Duplicate_in_array","url":"h:\\Programs\\C++\\01 Arrays\\Duplicate_in_array.cpp","tests":[{"id":1652606431898,"input":"5\n1 2 3 4 2","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\01 Arrays\\Duplicate_in_array.cpp","group":"local","local":true}

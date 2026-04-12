@@ -1,0 +1,1 @@
+{"name":"Local: printLikeWave","url":"h:\\Programs\\C++\\2D-Arrays\\printLikeWave.cpp","tests":[{"id":1663696642368,"input":"1 2 3\n4 5 6\n7 8 9","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\2D-Arrays\\printLikeWave.cpp","group":"local","local":true}

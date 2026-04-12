@@ -1,0 +1,1 @@
+{"name":"Local: reverse_integer","url":"h:\\Programs\\C++\\reverse_integer.cpp","tests":[{"id":1652513501433,"input":"1234567","output":"7654321"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\reverse_integer.cpp","group":"local","local":true}

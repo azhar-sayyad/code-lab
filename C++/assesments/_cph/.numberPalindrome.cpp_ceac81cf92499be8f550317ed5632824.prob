@@ -1,0 +1,1 @@
+{"name":"Local: numberPalindrome","url":"h:\\Programs\\C++\\assesments\\numberPalindrome.cpp","tests":[{"id":1663582025159,"input":"2\n123\n121","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\assesments\\numberPalindrome.cpp","group":"local","local":true}

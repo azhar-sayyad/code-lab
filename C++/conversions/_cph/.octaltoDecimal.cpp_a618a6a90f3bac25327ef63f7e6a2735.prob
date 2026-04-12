@@ -1,0 +1,1 @@
+{"name":"Local: octaltoDecimal","url":"h:\\Programs\\C++\\conversions\\octaltoDecimal.cpp","tests":[{"id":1640772797253,"input":"17","output":"15"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\conversions\\octaltoDecimal.cpp","group":"local","local":true}

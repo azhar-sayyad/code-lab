@@ -1,0 +1,1 @@
+{"name":"Local: Intersection_of_2_arrays","url":"h:\\Programs\\C++\\01 Arrays\\Intersection_of_2_arrays.cpp","tests":[{"id":1652608097965,"input":"3 3\n1 2 3\n5 6 3","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\01 Arrays\\Intersection_of_2_arrays.cpp","group":"local","local":true}

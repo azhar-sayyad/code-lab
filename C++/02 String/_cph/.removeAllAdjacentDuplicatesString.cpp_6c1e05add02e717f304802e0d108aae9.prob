@@ -1,0 +1,1 @@
+{"name":"Local: removeAllAdjacentDuplicatesString","url":"h:\\Programs\\C++\\02 String\\removeAllAdjacentDuplicatesString.cpp","tests":[{"id":1663676005958,"input":"cabbaca","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\02 String\\removeAllAdjacentDuplicatesString.cpp","group":"local","local":true}

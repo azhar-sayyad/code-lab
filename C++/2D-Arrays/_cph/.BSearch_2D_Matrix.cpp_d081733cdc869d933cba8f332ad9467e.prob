@@ -1,0 +1,1 @@
+{"name":"Local: BSearch_2D_Matrix","url":"h:\\Programs\\C++\\2D-Arrays\\BSearch_2D_Matrix.cpp","tests":[{"id":1663751974080,"input":"1 2 3\n4 5 6\n7 8 9\n0","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\2D-Arrays\\BSearch_2D_Matrix.cpp","group":"local","local":true}

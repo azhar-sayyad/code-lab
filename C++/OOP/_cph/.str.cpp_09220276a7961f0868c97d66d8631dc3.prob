@@ -1,0 +1,1 @@
+{"name":"Local: str","url":"h:\\Programs\\C++\\OOP\\str.cpp","tests":[{"id":1659941827165,"input":"5\n5\n4\n3\n1\n2\nDog\nGoat\nCat\nHorse\nElephant","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\OOP\\str.cpp","group":"local","local":true}

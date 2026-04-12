@@ -1,0 +1,1 @@
+{"name":"Local: first_non_repeating_char","url":"h:\\Programs\\C++\\08 Queue\\first_non_repeating_char.cpp","tests":[{"id":1664642098501,"input":"aabcdefbcdef","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\08 Queue\\first_non_repeating_char.cpp","group":"local","local":true}

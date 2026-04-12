@@ -1,0 +1,1 @@
+{"name":"Local: palindrome","url":"h:\\Programs\\C++\\02 String\\palindrome.cpp","tests":[{"id":1663687329202,"input":"aabbcacbbaa","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\02 String\\palindrome.cpp","group":"local","local":true}

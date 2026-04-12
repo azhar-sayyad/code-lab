@@ -1,0 +1,1 @@
+{"name":"Local: JumpingOntheClouds","url":"h:\\Programs\\C++\\assesments\\JumpingOntheClouds.cpp","tests":[{"id":1663347084635,"input":"10 3\n1 1 1 0 1 1 0 0 0 0","output":"80"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\assesments\\JumpingOntheClouds.cpp","group":"local","local":true}

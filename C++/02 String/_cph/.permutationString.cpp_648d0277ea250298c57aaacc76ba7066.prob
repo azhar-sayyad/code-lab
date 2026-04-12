@@ -1,0 +1,1 @@
+{"name":"Local: permutationString","url":"h:\\Programs\\C++\\02 String\\permutationString.cpp","tests":[{"id":1663673321336,"input":"abc\na","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\02 String\\permutationString.cpp","group":"local","local":true}

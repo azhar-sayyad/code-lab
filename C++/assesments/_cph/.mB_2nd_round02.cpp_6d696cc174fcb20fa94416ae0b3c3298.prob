@@ -1,0 +1,1 @@
+{"name":"Local: mB_2nd_round02","url":"h:\\Programs\\C++\\assesments\\mB_2nd_round02.cpp","tests":[{"id":1664025566502,"input":"2\na a b b\na c b c\na a b b\na a ? c","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"h:\\Programs\\C++\\assesments\\mB_2nd_round02.cpp","group":"local","local":true}
