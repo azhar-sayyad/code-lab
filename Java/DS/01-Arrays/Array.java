@@ -51,7 +51,6 @@ public class Array{
     public void remove(int index) {
         this.checkIndex(index);
 
-        int value = arr[index];
         for (int i = index; i < size - 1; i++) {
             arr[i] = arr[i + 1];
         }
@@ -118,7 +117,7 @@ public class Array{
     }
 
     private void resize(){
-        int newArr[] = new int[arr.length * 2];
+        int newArr[] = new int[size * 2];
         for(int i = 0; i < arr.length; i++){
             newArr[i] = arr[i];
         }
