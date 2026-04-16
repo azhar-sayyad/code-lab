@@ -292,6 +292,38 @@ public class Array {
 
     }
 
+    // Write a java program to right rotate array by n position.
+    public static void rotateArray(int arr[], int n) {
+
+        if (n == 0 || n < 0) {
+            return;
+        }
+
+        int tempArr[] = new int[arr.length];
+        int index = 0;
+
+        int start = arr.length - n - 1;
+
+        for (int i = start; i < arr.length; i++) {
+            tempArr[index++] = arr[i];
+        }
+
+        for (int i = 0; i < start; i++) {
+            tempArr[index++] = arr[i];
+        }
+
+        System.out.println("\nOriginal array: ");
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+
+        System.out.println("\nRotated array: ");
+        for (int i = 0; i < tempArr.length; i++) {
+            System.out.print(tempArr[i] + " ");
+        }
+
+    }
+
     public static void main(String[] args) {
 
         int[] arr = { 1, 2, 3, 4, 5, 5, 4, 8, 2, 4 };
@@ -306,6 +338,8 @@ public class Array {
         mergeTwoSortedArray(new int[] { 1, 2, 3, 4, 5 }, new int[] { 1, 6, 7, 8, 9, 10 });
         reverseArray(arr);
         searchInArray(arr, 5);
+
+        rotateArray(arr, 4);
 
     }
 
