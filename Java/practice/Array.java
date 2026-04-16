@@ -128,7 +128,7 @@ public class Array {
 
     // Write a java program to print the reverse of array.
 
-    public static void reverseArr(int[] arr) {
+    public static void printReverseArr(int[] arr) {
 
         System.out.println("\nOriginal array: ");
         for (int i = 0; i < arr.length; i++) {
@@ -256,6 +256,42 @@ public class Array {
 
     }
 
+    // Write a java program to reverse the elements of an array.
+    public static void reverseArray(int arr[]) {
+        int tempArr[] = new int[arr.length];
+        int index = 0;
+
+        for (int i = arr.length - 1; i >= 0; i--) {
+            tempArr[index++] = arr[i];
+        }
+
+        System.out.println("\nReversed array: ");
+        for (int i = 0; i < tempArr.length; i++) {
+            System.out.print(tempArr[i] + " ");
+        }
+
+    }
+
+    // Write a java program to search element in an array.
+    public static void searchInArray(int arr[], int element) {
+
+        int elementIndex = -1;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == element) {
+                elementIndex = i;
+                break;
+            }
+        }
+
+        if (elementIndex != -1) {
+            System.out.println("\nElement " + element + " found at index " + elementIndex);
+        } else {
+            System.out.println("\nElement " + element + " not found in array");
+        }
+
+    }
+
     public static void main(String[] args) {
 
         int[] arr = { 1, 2, 3, 4, 5, 5, 4, 8, 2, 4 };
@@ -263,11 +299,13 @@ public class Array {
         countDuplicateElements(arr);
         leftRotate(arr, 5);
         printEvenOdd(arr);
-        reverseArr(arr);
+        printReverseArr(arr);
         insertInArray(arr, 99, 4);
         deleteInArr(arr, 3);
         printUnique(arr);
         mergeTwoSortedArray(new int[] { 1, 2, 3, 4, 5 }, new int[] { 1, 6, 7, 8, 9, 10 });
+        reverseArray(arr);
+        searchInArray(arr, 5);
 
     }
 
