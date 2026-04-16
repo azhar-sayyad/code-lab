@@ -17,7 +17,11 @@ public class Array {
         }
 
         System.out.println("Largest element: " + large);
-        System.out.println("Second largest element: " + secondLarge);
+        if (secondLarge == Integer.MIN_VALUE) {
+            System.out.println("Second largest element: -1");
+        } else {
+            System.out.println("Second largest element: " + secondLarge);
+        }
     }
 
     // Write a java program to input elements in array from user and count duplicate
@@ -38,20 +42,24 @@ public class Array {
             dupArr[value]++;
         }
         int countOfDuplicate = 0;
+        System.out.println("\nDuplicate elements and their counts: ");
         for (int i = 0; i < dupArr.length; i++) {
             if (dupArr[i] > 1) {
                 countOfDuplicate++;
-                System.out.println("Duplicate element: " + i + " Count: " + dupArr[i]);
+                System.out.println("Element: " + i + ", Count: " + dupArr[i]);
             }
         }
-        System.out.println("Count of duplicate elements: " + countOfDuplicate);
+        System.out.println("Total count of unique duplicate values: " + countOfDuplicate);
     }
 
     // Write a Java program to left rotate an array by k position.
     public static void leftRotate(int[] arr, int k) {
 
-        int tempArr[] = new int[arr.length];
+        if (arr.length == 0)
+            return;
+        k = k % arr.length;
 
+        int tempArr[] = new int[arr.length];
         int tempIndex = 0;
 
         for (int i = k; i < arr.length; i++) {
@@ -64,16 +72,11 @@ public class Array {
             tempIndex++;
         }
 
-        System.out.println("\nOriginal array: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-
-        System.out.println("\n\nRotated array: ");
-        for (int i = 0; i < arr.length; i++) {
+        System.out.println("\nArray after " + k + " Left Rotations: ");
+        for (int i = 0; i < tempArr.length; i++) {
             System.out.print(tempArr[i] + " ");
         }
-
+        System.out.println();
     }
 
     // Write a java program to print all negative elements in an array.
@@ -81,15 +84,22 @@ public class Array {
     public static void printNegative(int[] arr) {
 
         System.out.println("\nNegative elements in array: ");
+        boolean found = false;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] < 0) {
                 System.out.print(arr[i] + " ");
+                found = true;
             }
         }
+        if (!found)
+            System.out.print("None");
+        System.out.println();
     }
 
     // Write a java program to find maximum and minimum element in array.
     public static void printMaxMin(int[] arr) {
+        if (arr.length == 0)
+            return;
         int max = Integer.MIN_VALUE;
         int min = Integer.MAX_VALUE;
 
@@ -102,7 +112,7 @@ public class Array {
             }
         }
 
-        System.out.println("Maximum element: " + max);
+        System.out.println("\nMaximum element: " + max);
         System.out.println("Minimum element: " + min);
     }
 
@@ -122,23 +132,19 @@ public class Array {
             }
         }
 
-        System.out.println("Total even elements:" + evenElement);
-        System.out.println("Total odd elements:" + oddElement);
+        System.out.println("\nTotal even elements: " + evenElement);
+        System.out.println("Total odd elements: " + oddElement);
     }
 
     // Write a java program to print the reverse of array.
 
     public static void printReverseArr(int[] arr) {
 
-        System.out.println("\nOriginal array: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-
-        System.out.println("\nReverse array: ");
+        System.out.println("\nArray elements in reverse order: ");
         for (int i = arr.length - 1; i >= 0; i--) {
             System.out.print(arr[i] + " ");
         }
+        System.out.println();
     }
 
     // Write a java program to insert an element in an array.
@@ -161,7 +167,7 @@ public class Array {
         for (int i = position; i <= arr.length; i++) {
             tempArr[i] = arr[i - 1];
         }
-        System.out.println("\nArray after insertion at position " + position + ": ");
+        System.out.println("\nArray after inserting " + element + " at position " + position + ": ");
         for (int i = 0; i < tempArr.length; i++) {
             System.out.print(tempArr[i] + " ");
         }
@@ -248,7 +254,7 @@ public class Array {
             tempArr[index++] = arr2[j++];
         }
 
-        System.out.println("\nMerged sorted array: ");
+        System.out.println("\nMerged two sorted arrays: ");
         for (int k = 0; k < tempArr.length; k++) {
             System.out.print(tempArr[k] + " ");
         }
@@ -265,11 +271,11 @@ public class Array {
             tempArr[index++] = arr[i];
         }
 
-        System.out.println("\nReversed array: ");
+        System.out.println("\nNew reversed array: ");
         for (int i = 0; i < tempArr.length; i++) {
             System.out.print(tempArr[i] + " ");
         }
-
+        System.out.println();
     }
 
     // Write a java program to search element in an array.
@@ -295,14 +301,18 @@ public class Array {
     // Write a java program to right rotate array by n position.
     public static void rotateArray(int arr[], int n) {
 
-        if (n == 0 || n < 0) {
+        if (arr.length == 0)
+            return;
+        n = n % arr.length;
+
+        if (n == 0) {
             return;
         }
 
         int tempArr[] = new int[arr.length];
         int index = 0;
 
-        int start = arr.length - n - 1;
+        int start = arr.length - n;
 
         for (int i = start; i < arr.length; i++) {
             tempArr[index++] = arr[i];
@@ -312,33 +322,39 @@ public class Array {
             tempArr[index++] = arr[i];
         }
 
-        System.out.println("\nOriginal array: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
-
-        System.out.println("\nRotated array: ");
+        System.out.println("\nArray after " + n + " Right Rotations: ");
         for (int i = 0; i < tempArr.length; i++) {
             System.out.print(tempArr[i] + " ");
         }
+        System.out.println();
 
     }
 
     public static void main(String[] args) {
 
         int[] arr = { 1, 2, 3, 4, 5, 5, 4, 8, 2, 4 };
+
+        System.out.println("Original Array: ");
+        for (int x : arr)
+            System.out.print(x + " ");
+        System.out.println("\n");
+
         findSecondLargest(arr);
         countDuplicateElements(arr);
         leftRotate(arr, 5);
+        printMaxMin(arr);
         printEvenOdd(arr);
         printReverseArr(arr);
         insertInArray(arr, 99, 4);
         deleteInArr(arr, 3);
         printUnique(arr);
+
+        System.out.println("\n--- Sorting/Merging Section ---");
         mergeTwoSortedArray(new int[] { 1, 2, 3, 4, 5 }, new int[] { 1, 6, 7, 8, 9, 10 });
+
+        System.out.println("\n--- Utility Section ---");
         reverseArray(arr);
         searchInArray(arr, 5);
-
         rotateArray(arr, 4);
 
     }
